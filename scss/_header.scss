@@ -1,0 +1,210 @@
+.header{
+    padding-top: 40px;
+
+
+    &__div{
+        display: flex;
+    }
+
+    &__logo-div{
+        z-index: 11;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    &__items{
+        display: flex;
+        width: 232px;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        left: 64px;
+    }
+
+    &__item{
+        list-style: none;
+        color:rgba(54, 83, 107, 1);
+        font-family: 'Public Sans', sans-serif;
+        font-weight: 700;
+        transition: 0.8s;
+        opacity: 0.7;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+        font-size: 15px;
+    }
+
+    &__item:hover{
+        opacity: 1;
+    }
+
+    &__item:active{
+        opacity: 1;
+    }
+
+    &__button-div{
+        position: relative;
+        width: 173px;
+        left: 574px;
+        height: 48px;
+        background-color: #BA4270;
+        border-radius: 24px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        transition: 0.8s;
+    }
+
+    &__button-a{
+        color:rgba(251, 252, 254, 1);
+        text-decoration: none;
+        font-family: 'Public Sans',sans-serif;
+        font-weight: 700;
+        position: relative;
+        top: 16px;
+        font-size: 15px;
+    }
+
+    &__button-div:active{
+        background-color: #DA6D97;
+    }
+
+    &__button-div:hover{
+        background-color: #DA6D97;
+    }
+}
+
+.toggle{
+    position: relative;
+    width: 35px;
+    height: 25px;
+    /* background-color: red; */
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 10;
+    left: auto;
+    top: 10px;
+    display: none;
+    margin-left: auto;
+}
+
+
+
+
+
+.toggle::after, 
+.toggle::before, 
+.toggle > span{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: rgba(0, 0, 0, 0.788);
+    border-radius: 4px;
+    transition: transform .2s ease;
+}
+.toggle::before{
+    top: 0;
+}
+.toggle > span{
+    margin: auto;
+}
+.toggle::after{
+    bottom: 0;
+}
+/* Toggle active */
+.toggle--active::before, 
+.toggle--active::after,
+.toggle--active > span{
+    background-color: white;
+}
+
+.toggle--active::before{
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+
+}
+
+.toggle--active::after{
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+}
+
+.toggle--active > span{
+    display: none;
+}
+.toggle--active + .menu {
+    display: flex;
+}
+
+.menu{
+    
+
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.87);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    backdrop-filter: blur(4px);
+}
+.menu__item{
+    margin: 10px 0;
+}
+.menu__link{
+    color: white;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.link{
+    color: red;
+}
+
+
+@media screen and (max-width:768px) /* for tablets */ {
+
+.header{
+    &__button-div{
+        left: 153px;
+    }
+}
+}
+
+
+
+@media screen and (max-width:375px) /*for phones */{
+
+.toggle{
+    display: flex;
+    right: 0;
+}
+
+.header{
+
+    &__button-div{
+    display: none;
+    }
+
+    &__items{
+        display: none;
+    }
+}
+}

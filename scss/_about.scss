@@ -1,0 +1,122 @@
+
+.about{
+    height: 409px;
+    background-color: #1B262F;
+    margin-top: 30px;
+    
+
+    &__div{
+        position: relative;
+        display: flex;
+
+    }
+
+    &__title{
+        font-size: 48px;
+        font-weight: 400;
+        font-family: 'DM Serif Display', serif;
+        color: #FBFCFE;
+        margin: 0;
+    }
+
+    &__text{
+        margin: 0;
+        margin-top: 24px!important;
+        font-size: 15px;
+        max-width: 447px;
+        height: auto;
+        color: #FBFCFE;
+        font-family: 'Public Sans', sans-serif;
+        font-weight: 400;
+    }
+
+    &__icons-div{
+        max-width: 536px;
+        top: 125px;
+        position: relative;
+        left: 100px;
+    }
+
+    &__icon{
+        margin: 18px;
+    }
+
+    &__text-div{
+        width: auto;
+        position: relative;
+        top: 100px;
+        margin: 0;
+    }
+
+    &__btn-a{
+        border: 2px solid #FBFCFE;
+        border-radius: 24px;
+        max-width: 129px;
+        height: auto;
+        text-align: center;
+        justify-content: center;
+        padding: 16px 32px;
+        font-size: 15px;
+        color: #FBFCFE;
+        text-decoration: none;
+        top: 42px;
+        position: relative;
+        transition: 0.8s;
+    }
+
+    &__btn-a:hover{
+        background-color: #FBFCFE;
+        color: #1B262F;
+    }
+
+    &__btn-a:active{
+        background-color: #FBFCFE;
+        color: #1B262F;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+.about{
+    position: relative;
+    top: 100px;
+    height: 500px;
+
+    &__div{
+        flex-direction:column-reverse;
+        justify-content: center
+    }
+
+    &__text-div{
+        top: 90px;
+        text-align: center;
+    }
+
+    &__text{
+        margin: 0 auto;
+    }
+
+    &__icons-div{
+        top: 30px;
+        left: auto;
+        margin: 0px auto;
+    }
+}
+}
+
+@media screen and (max-width:375px) /* for phones */ {
+
+.about{
+    height: 620px;
+
+
+    &__icon{
+        margin: 13px 3px;
+    }
+
+    &__title{
+        font-size: 32px;
+    }
+
+}
+}

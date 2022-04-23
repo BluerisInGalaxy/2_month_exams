@@ -1,0 +1,221 @@
+
+.hero{
+    position: relative;
+    top: 74px;
+
+    &__div{
+        display: flex;
+    }
+
+    &__img{
+        width: 306px;
+        height: 517px;
+    }
+
+    &__img-div{
+        position: relative;
+        top: -60px;
+        left: 130px;
+    }
+
+    &__title{        
+        font-family: 'DM Serif Display', serif;
+        font-size: 72px;
+        color: #36536B;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    &__title-div{
+        width: 546px;
+        height: 243px;
+    }
+
+    &__title-and-input-div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__input-line{
+        background-color: #FBFCFE;
+        width: 445px;
+        height: 48px;
+        font-size: 15px;
+        color: rgba(54, 83, 107, 0.5);
+        font-family: 'Public Sans', sans-serif;
+        border-radius: 24px;
+        border: 0px solid transparent;
+        position: relative;
+        transition: 0.8s;
+        padding-left: 27px;
+    }
+
+    &__input-line:hover{
+        color: #36536B;
+    }
+
+    &__input-line:active{
+        color: #36536B;
+    }
+
+    &__input-line-label{
+        width: 445px;
+        height: 48px;
+        position: relative;
+    }
+
+    &__input-div{
+        margin-top: 21px;
+        width: 474px;
+    }
+
+    &__input-btn{
+        border-radius: 24px;
+        width: 173px;
+        height: 48px;
+        padding-top:5px;
+        border: 0px solid transparent;
+        background-color: #BA4270;
+        font-family: 'Public Sans', sans-serif;
+        font-size: 15px;
+        color: #FBFCFE;
+        position: absolute;
+        right: 0px;
+        font-weight: 700;
+        transition: 0.8s;
+    }
+
+    &__input-btn:hover{
+        background-color:#DA6D97;
+    }
+
+    &__input-btn:active{
+        background-color:#DA6D97;
+    }
+
+    &__input-line-text{
+        font-family: 'Public Sans', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        color: #6C8294;
+    }
+
+    &__input-line-text-a{
+        font-weight: 700;
+        text-decoration:none;
+        color: #6C8294;
+    }
+}
+
+
+
+
+
+@media screen and (max-width:375px) /* for phones */{
+.hero{
+    &__div{
+        flex-direction: column-reverse;
+    }
+
+    &__img{
+        width: 127px;
+        height: 239px;
+        margin: 0px auto;
+        justify-content: center;
+    }
+
+    &__img-div{
+        left: 0;
+        justify-content: center;
+        align-items: center;
+        margin: 0px auto;
+    }
+
+    &__title{
+        font-size: 36px;
+    }
+
+    &__title-div{
+        width:  auto;
+        height: auto;
+        text-align: center;
+    }
+
+    &__title-and-input-div{
+        padding: 0px auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__input-line{
+        max-width: 295px;
+        margin: 0px auto;
+        padding-left: 5px;
+        width: 100%;
+        padding: 0;
+    }
+
+    &__input-div{
+        max-width: 295px;
+        
+    }
+
+    &__input-btn{
+        position: relative;
+        max-width: 295px;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    &__input-line-label{
+        width: 100%;
+    }
+
+    &__input-line-text{
+        width: 100%;
+        max-width: 295px;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+}
+
+@media screen and (max-width:768px) /* for tablets */{
+
+.hero{
+    &__title{
+        font-size: 48px;
+    }
+
+    &__div{
+        flex-direction: column-reverse;
+    }
+
+    &__img-div{
+        width: auto;
+    height: auto;
+    margin: 0 auto;
+    left: 0;
+    }
+
+    &__input-line{
+        max-width: 445px;
+        width: 100%;
+    }
+
+    &__input-div{
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    &__title-div{
+        text-align: center;
+    margin: 0 auto;
+    max-width: 573px;
+    width: 100%;
+    height: auto;
+    }
+}
+}

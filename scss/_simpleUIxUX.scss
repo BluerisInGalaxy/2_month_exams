@@ -1,0 +1,164 @@
+
+.SimpleUIxUX{
+    height: 800px;
+    margin-top: 210px;
+    text-align: center;
+
+        &__div{
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__easy-div{
+            display: flex;
+        }
+
+        &__easy-title{
+            font-size: 48px;
+            font-family: 'DM Serif Display',serif;
+            color: #36536B;
+            margin-top: 100px;
+            margin-bottom: 24px;
+            font-weight: 400;
+        }
+
+        &__easy-text{
+            margin: 0;
+            font-family: 'Public Sans', sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            max-width: 445px;
+        }
+
+        &__ui-div{
+            display: flex;
+            margin-top: 70px;
+        }
+
+        &__ui-img-left{
+            margin: 0;
+            margin-right: -90px;
+        }
+
+        &__ui-img-right{
+            margin: 0;
+            margin-right: -120px;
+        }
+
+        &__ui-title{
+            font-size: 48px;
+            font-family: 'DM Serif Display',serif;
+            color: #36536B;
+            margin-bottom: 24px!important;
+            font-weight: 400;
+            margin-top: 250px;
+        }
+
+        &__ui-text{
+            max-width: 445px;
+            height: auto;
+            font-family: 'Public Sans', sans-serif;
+            color: #6C8294;
+            font-size: 15px;
+            margin: 0;
+        }
+
+        &__ui-img-div{
+            display: flex;
+        }
+}
+
+@media screen and (max-width:768px) /* for tablets */ {
+
+.SimpleUIxUX{
+    position: relative;
+    top: 100px;
+
+    &__easy-img{
+        max-width: 391px;
+        margin: 0 auto;
+    }
+
+    &__easy-div{
+        flex-direction: column;
+    }
+
+    &__easy-title{
+        margin-top: 0;
+        font-size: 48px;
+    }
+
+    &__easy-text{
+        margin: 0 auto;
+    }
+
+    &__ui-img-div{
+        margin: 0 auto;
+    }
+
+    &__ui-div{
+        flex-direction: column-reverse;
+    }
+
+    &__ui-img-right {
+        max-width: 168px;
+        margin: 0;
+    }
+
+    &__ui-img-left{
+        max-width: 168px;
+        margin: 0;
+    }
+
+    &__ui-title{
+        margin-top: 30px;
+        margin: 0 auto;
+        font-size: 48px;
+    }
+
+    &__ui-text{
+        margin: 0 auto;
+    }
+}
+}
+
+@media screen and (max-width:375px) /* for phones */ {
+
+.SimpleUIxUX{
+    position: relative;
+    top: 100px;
+
+    &__easy-img{
+        max-width: 327px;
+    }
+
+    &__easy-div{
+        flex-direction: column;
+    }
+
+    &__easy-title{
+        margin-top: 0;
+        font-size: 36px;
+    }
+
+    &__ui-div{
+        flex-direction: column-reverse;
+    }
+
+    &__ui-img-right {
+        max-width: 152px;
+        margin: 0;
+    }
+
+    &__ui-img-left{
+        max-width: 152px;
+        margin: 0;
+    }
+
+    &__ui-title{
+        margin-top: 30px;
+        font-size: 36px;
+    }
+    
+}
+}

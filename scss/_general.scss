@@ -1,0 +1,37 @@
+.container{
+    max-width: 1110px;
+    margin: 0px 165px;
+}
+
+*
+*::after
+*::before{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Public Sans', sans-serif;
+    background-color: #EDF3F8;
+}
+
+.logo{
+    visibility: hidden;
+    position: absolute;
+}
+
+@media screen and (max-width:768px) /* for tablets */ {
+    .container{
+        max-width: 689px;
+        margin: 0px 39px!important;
+    }
+}
+
+@media screen and (max-width:375px) /* for phones */ {
+    .container{
+        max-width: 327px;
+        margin: 0px 24px!important;
+    }
+}

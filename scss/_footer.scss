@@ -1,0 +1,99 @@
+
+.footer{
+    background-color: #1B262F;
+
+    &__div{
+        display: flex;
+    }
+    
+    &__items{
+        display: flex;
+        align-items: center;
+        padding: 0;
+        width: 232px;
+        justify-content: space-between;
+        padding-left: 64px;
+    }
+
+    &__item{
+        list-style: none;
+        color: #FBFCFE;
+        font-family: 'Public Sans',sans-serif;
+        opacity: 0.7;
+    }
+
+    &__item:hover{
+        opacity: 1;
+    }
+
+    &__item:active{
+        opacity: 1;
+    }
+
+    &__logo{
+        margin: 22.5px 0;
+    }
+
+    &__icons-div{
+        position: relative;
+        left: 560px;
+    }
+
+    &__icons{
+        list-style: none;
+        display: flex;
+        width: 120px;
+        justify-content:space-between ;
+        align-items: center;
+        margin: 30px 0;
+        padding: 0;
+    }
+
+    &__icon:hover{
+        color: #DA6D97;
+        transition: 0.8s;
+    }
+
+    &__icon:active{
+        color: #DA6D97;
+        transition: 0.8s;
+    }
+
+    &__svg{
+        fill: #FBFCFE;
+    }
+}
+
+@media screen and (max-width:375px) /*for phones */{
+    .footer{
+
+        &__div{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__icons-div{
+            margin: 0 auto;
+        }
+
+        &__items{
+            padding: 0;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 20px;
+        }
+    }
+}
+
+@media screen and (max-width:768px) /* for tablets */{
+    .footer{
+        margin-top: 100px;
+
+        &__icons-div{
+            right: 0px;
+            margin-left: auto;
+            left: 0;
+        }
+    }
+}
