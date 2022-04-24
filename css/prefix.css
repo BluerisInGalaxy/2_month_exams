@@ -37,9 +37,9 @@
     }
   }
   
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 425px) {
     .container {
-      max-width: 327px;
+      max-width: 376px;
       margin: 0px 24px !important;
     }
   }
@@ -84,7 +84,8 @@
   }
   
   .about__icon {
-    margin: 18px;
+    width: 160px;
+    margin: 5px;
   }
   
   .about__text-div {
@@ -151,17 +152,41 @@
       left: auto;
       margin: 0px auto;
     }
+    .about__icon {
+      margin: auto 10px;
+    }
   }
   
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 425px) {
     .about {
-      height: 620px;
+      height: 530px;
     }
     .about__icon {
-      margin: 13px 3px;
+      margin: auto;
+    }
+    .about__icons-div {
+      padding: 10px;
     }
     .about__title {
       font-size: 32px;
+    }
+  }
+  
+  @media screen and (max-width: 393px) {
+    __icons-div {
+      padding: 0px;
+    }
+  }
+  
+  @media screen and (max-width: 373px) {
+    .about {
+      height: 830px;
+    }
+    .about__icons-div {
+      padding: 50px;
+    }
+    .about__icon {
+      margin: 10px 5px;
     }
   }
   
@@ -267,7 +292,7 @@
     }
   }
   
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 425px) {
     .afterUI {
       margin-top: 300px !important;
     }
@@ -347,15 +372,25 @@
     padding: 0;
   }
   
-  .footer__svg:hover {
-    fill: #DA6D97;
-  }
-  
   .footer__icon:hover {
     color: #DA6D97;
+    -webkit-transition: 0.8s;
+    -o-transition: 0.8s;
+    transition: 0.8s;
   }
   
-  @media screen and (max-width: 375px) {
+  .footer__icon:active {
+    color: #DA6D97;
+    -webkit-transition: 0.8s;
+    -o-transition: 0.8s;
+    transition: 0.8s;
+  }
+  
+  .footer__svg {
+    fill: #FBFCFE;
+  }
+  
+  @media screen and (max-width: 425px) {
     .footer__div {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -460,7 +495,6 @@
   .header__button-div {
     position: relative;
     width: 173px;
-    left: 574px;
     height: 48px;
     background-color: #BA4270;
     border-radius: 24px;
@@ -474,6 +508,7 @@
     -webkit-transition: 0.8s;
     -o-transition: 0.8s;
     transition: 0.8s;
+    margin-left: auto;
   }
   
   .header__button-a {
@@ -618,11 +653,11 @@
   
   @media screen and (max-width: 768px) {
     .header__button-div {
-      left: 153px;
+      left: auto;
     }
   }
   
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 425px) {
     .toggle {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -756,7 +791,7 @@
     color: #6C8294;
   }
   
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 425px) {
     .hero__div {
       -webkit-box-orient: vertical;
       -webkit-box-direction: reverse;
@@ -948,7 +983,7 @@
     background-color: #DA6D97;
   }
   
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 425px) {
     .readyTo__div {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -1138,7 +1173,7 @@
     }
   }
   
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 425px) {
     .SimpleUIxUX {
       position: relative;
       top: 100px;

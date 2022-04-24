@@ -51,7 +51,6 @@
     &__button-div{
         position: relative;
         width: 173px;
-        left: 574px;
         height: 48px;
         background-color: #BA4270;
         border-radius: 24px;
@@ -59,6 +58,7 @@
         align-items: center;
         justify-content: center;
         transition: 0.8s;
+        margin-left: auto;
     }
 
     &__button-a{
@@ -183,14 +183,14 @@
 
 .header{
     &__button-div{
-        left: 153px;
+        left: auto;
     }
 }
 }
 
 
 
-@media screen and (max-width:375px) /*for phones */{
+@media screen and (max-width:425px) /*for phones */{
 
 .toggle{
     display: flex;

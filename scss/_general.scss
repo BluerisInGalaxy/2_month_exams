@@ -29,9 +29,10 @@ body{
     }
 }
 
-@media screen and (max-width:375px) /* for phones */ {
+@media screen and (max-width:425px) /* for phones */ {
     .container{
-        max-width: 327px;
+        max-width: 376px;
         margin: 0px 24px!important;
     }
 }
+

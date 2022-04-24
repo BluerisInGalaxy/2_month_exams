@@ -38,7 +38,8 @@
     }
 
     &__icon{
-        margin: 18px;
+        width: 160px;
+        margin: 5px;
     }
 
     &__text-div{
@@ -101,17 +102,25 @@
         left: auto;
         margin: 0px auto;
     }
+
+    &__icon{
+        margin: auto 10px;
+    }
 }
 }
 
-@media screen and (max-width:375px) /* for phones */ {
+@media screen and (max-width:425px) /* for phones */ {
 
 .about{
-    height: 620px;
+    height: 530px;
 
 
     &__icon{
-        margin: 13px 3px;
+        margin: auto;
+    }
+
+    &__icons-div{
+        padding: 10px;
     }
 
     &__title{
@@ -119,4 +128,24 @@
     }
 
 }
+}
+
+@media screen and (max-width:393px) {
+    &__icons-div{
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width:373px) {
+ .about{
+    height: 830px;
+
+    &__icons-div{
+        padding: 50px;
+    }
+
+    &__icon{
+        margin: 10px 5px;
+    }
+ }   
 }
